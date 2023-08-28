@@ -1,25 +1,36 @@
 package main
 
+// "booking-app/helper"
+
 import (
-	"booking-app/helper"
+	"booking-app/test"
 	"fmt"
 )
 
 func main() {
-	var conferenceName = "Go conference"
-	const conferenceTicket uint = 50
-	var remainingTickets uint = conferenceTicket
-	// var booking []string
+	value := test.TestFunction("Rasel Hossain")
 
-	fmt.Printf("Welcome to our %v booking application", conferenceName)
+	fmt.Println(value)
 
-	fmt.Printf("We have total of %v tickets and %v are still available", conferenceTicket, remainingTickets)
+	// var conferenceName = "Go conference"
+	// const conferenceTicket uint = 50
+	// var remainingTickets uint = conferenceTicket
+	// // var bookings []string
 
-	fmt.Println("Get your tickets here to attend the conference")
+	// fmt.Printf("Welcome to our %v booking application", conferenceName)
 
-	name := helper.PrintName("Rakibul")
+	// fmt.Printf("We have total of %v tickets and %v are still available", conferenceTicket, remainingTickets)
 
-	fmt.Println(name)
+	// fmt.Println("Get your tickets here to attend the conference")
+
+	// name := helper.PrintName("Rakibul")
+
+	// fmt.Println(name)
+
+	// var userData = make(map[string]string)
+	// userData["name"] = "Rakibul"
+	// userData["email"] = "rakibul@gmail.com"
+	// fmt.Println(userData["name"])
 
 	// var city string
 
@@ -72,7 +83,7 @@ func main() {
 	// 		fmt.Printf("\n Wee have %v tickets remaining\n", remainingTickets)
 
 	// 		firstNames := []string{}
-	// 		for _, booking := range booking {
+	// 		for _, booking := range bookings {
 	// 			var names = strings.Fields(booking)
 	// 			var firstName = names[0]
 	// 			firstNames = append(firstNames, firstName)
